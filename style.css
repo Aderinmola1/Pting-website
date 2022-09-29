@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+header{
+    position: relative;
+    height:90vh;
+    background-image: url(./images/unsplash_FCHlYvR5gJI.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+nav{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid lightgray;
+    align-items: center;
+    margin:  auto;
+    padding: 1.3rem 0;
+}
+.logo span{
+    /* position: relative; */
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 5rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: white;
+}
+nav button{
+    border: none;
+    outline: none;
+    padding: 1rem 3.5rem;
+    border-radius: 3rem;
+    background-color: aqua;
+    color: white;
+   
+}
+
+.header-text h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.header-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+}
+.header-text span{
+    color: aqua;
+    font-size: 3rem;
+}
+.header-text p{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+.btn2{
+    border: none;
+    outline: none;
+    padding: 1.5rem 4rem;
+    border-radius: 3rem;
+    background-color: aqua;
+    color: white;
+    font-size: 2rem;
+
+}
+
+.header-2{
+    color: aqua;
+}
+.comment{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+.container{
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+}
+.left{
+    font-size: 3rem;
+    flex-basis: 45%;
+    font-weight: bold;
+}
+.left span{
+    font-size: 3rem;
+    color: aqua;
+}
+.right{
+    flex-basis:55%;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: 
+    "web soft"
+    "app brand";
+}
+.right >*{
+    min-height: 17rem;
+}
+.right h3{
+    font-size: 2.5rem;
+}
+.right p{
+    font-size: 1.6rem;
+}
+.web{
+    grid-area: web;
+}
+.soft{
+    grid-area: soft;
+}
+.app{
+    grid-area: app;
+}
+.brand{
+    grid-area: brand;
+}
+.cont2{
+    display: flex;
+    width: 85vw;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    min-height: 25rem;
+}
+.top p{
+    margin-top: 3rem;
+}
+#pting{
+    color: black;
+    font-size: 2.5rem;
+}
+.text1{
+    flex-basis: 45%;
+}
+.text2{
+    flex-basis: 55%;
+}
+.bottom{
+    display: flex;
+}
+.bottom span{
+    color: green;
+}
+.lefty{
+    flex-basis: 45%;
+}
+.righty{
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.textthree, .textfour, .textfive{
+    margin-top: 5rem;
+}
+footer{
+    padding-left: 5rem;
+    padding-top: 3rem;
+    display: flex;
+    background-color: rgb(216, 216, 211);
+    min-height: 20rem;
+}
+.box1{
+    flex-basis: 30%;
+}
+.box2{
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box3{
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media(max-width: 940px){
+   nav ul {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 600px) {
+    nav ul{
+        position: absolute;
+        right: 100%;
+    }
+    nav button{
+        position: absolute;
+        right: 120%
+    }
+    .header-text h1{
+        color: white;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .header-text span{
+        color: aqua;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .header-text p{
+        font-size: 1.2rem;
+        width: 40rem;
+    }
+    .btn2{
+        border: none;
+        outline: none;
+        padding: 1rem 6rem;
+        border-radius: 3rem;
+        background-color: aqua;
+        font-size: 1.6rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        font-size: 2rem;
+        flex-basis: 45%;
+        font-weight: bold;
+    }
+    .left span{
+        font-size: 2rem;
+        color: aqua;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 80vw;
+        align-items: center;
+     
+    }
+    .web{
+        margin-top: 3rem;
+    
+    }
+    .left{
+        text-align: center;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        align-items: center;
+        text-align: center
+    }
+    .bottom{display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: center;
+    text-align: center
+    }
+    .text2{
+        margin-top: 1.2rem;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 40rem;
+    }
+    .box2{
+        justify-content: space-around;
+        min-height: 15rem;
+    }
+    .box3{
+        justify-content: space-around;
+        min-height: 15rem;
+    }
+}
+@media (max-width: 400px) {
+
+}
+    
+
+
+
